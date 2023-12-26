@@ -25,30 +25,21 @@
       height: auto;
       margin-bottom: 30px;
     }
-    form {
-      display: flex;
-      justify-content: left;
-      align-items: center;
-      flex-direction: column;
-    }
-    input[type="email"] {
-      padding: 10px;
-      margin-bottom: 15px;
-      width: 250px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    input[type="submit"] {
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    input[type="submit"]:hover {
-      background-color: #0056b3;
-    }
+    <form
+  action="https://formspree.io/f/xzbnplel"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
   </style>
 </head>
 <body>
